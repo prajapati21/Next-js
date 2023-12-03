@@ -1,11 +1,42 @@
-import Button from "../../Tailwind/Button/Button";
-import Card from "../../Tailwind/Card/Card";
+import { 
+  Card,
+  Button,
+  Navbar
+} from "../../Tailwind";
 const Page = () =>{
+  const menus ={ 
+    brand : "Code with Me",
+    link : [
+      {
+        label : "Home",
+        href  :"/"
+      },
+      {
+        label : "Home",
+        href  :"/"
+      },
+      {
+        label : "Home",
+        href  :"/"
+      },
+      {
+        label : "Home",
+        href  :"/"
+      },
+      {
+        label : "Home",
+        href  :"/"
+      },
+    ]
+  }
   const design = (
     <>
-      <h3 className="text-5xl">Reusable</h3>
-      <Button />
-      <Card />
+      <Navbar
+      theme="error"
+      variant="three"
+      menu={menus}
+      />
+      <div style={{width:"100%",height:"5000px"}}></div>
     </>
   );
   return design;
