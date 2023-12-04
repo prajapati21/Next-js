@@ -1,7 +1,8 @@
 import { 
   Card,
   Button,
-  Navbar
+  Navbar,
+ 
 } from "../../Tailwind";
 const Page = () =>{
   const menus ={ 
@@ -32,9 +33,10 @@ const Page = () =>{
   const design = (
     <>
       <Navbar
-      theme="error"
+      theme="primary"
       variant="three"
       menu={menus}
+      sticky={true}
       />
       <div style={{width:"100%",height:"5000px"}}></div>
     </>
